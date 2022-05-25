@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-black">
+    <div class="p-8">
+      <h1 class="text-3xl text-white">Todo's</h1>
+      <h2 class="text-xl text-gray-400">
+        Typical todo app using a redux built form sratch!
+      </h2>
+      <div class="mt-4 p-4 w-100 bg-neutral-900 rounded-md">
+        <p class="font-bold text-white">Todos:</p>
+        <ul id="todos"></ul>
+        <form
+          id="todosForm"
+          class="flex w-full justify-between text-neutral-400"
+        >
+          <input
+            type="text"
+            id="todosFormInput"
+            placeholder="Add new goal..."
+            class="outline-none bg-transparent placeholder:text-neutral-600"
+          />
+          <button type="submit" class="text-neutral-500 cursor-pointer">
+            Add
+          </button>
+        </form>
+      </div>
+      <div class="mt-4 p-4 w-100 bg-neutral-900 rounded-md">
+        <p class="font-bold text-white">Goals:</p>
+        <ul id="goals"></ul>
+        <form
+          id="goalsForm"
+          class="flex w-full justify-between text-neutral-400"
+        >
+          <input
+            type="text"
+            id="goalsFormInput"
+            placeholder="Add new goal..."
+            class="outline-none bg-transparent placeholder:text-neutral-600"
+          />
+          <button type="submit" class="text-neutral-500 cursor-pointer">
+            Add
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
